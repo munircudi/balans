@@ -1,0 +1,136 @@
+{%load static%}
+{% extends 'balansapp/base.html' %}
+{% block page_title %}
+  About
+{% endblock %}
+
+{% block content %}
+  <div class="wrapper">
+    <!-- Preloader -->
+
+    <div id="loading" style="display: none;">
+      <div id="loading-center">
+        <div id="loading-center-absolute">
+          <div class="object"></div>
+          <div class="object"></div>
+          <div class="object"></div>
+          <div class="object"></div>
+          <div class="object"></div>
+          <div class="object"></div>
+          <div class="object"></div>
+          <div class="object"></div>
+          <div class="object"></div>
+          <div class="object"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End off Preloader -->
+
+    <!-- Header -->
+    <header>
+      <!-- Top Navbar -->
+      {% include 'partials/_topbar.html'%}
+
+      <!-- Top Navbar end -->
+
+      <!-- Navbar -->
+      {% include 'partials/_navbar.html'%}
+
+      <!-- Navbar end -->
+    </header>
+    <!-- Header end -->
+
+
+
+
+    <!-- About -->
+      <section id="about">
+      <div class="container about_bg">
+        <div class="row">
+          <div class="col-lg-7 col-md-6">
+            <div class="about_content">
+              <h2>20 yıldır Birlikte Daha Güçlüyüz</h2>
+
+              <p>Endüstriyel ekipmanlar ve iş makineleri yedek parça tedarik, ithalat ve ihracatında faaliyet gösteren firmamız, dünya çapında bilinen markaların tedarikçisi olarak müşterilerimize en yüksek kalitede hizmet vermeyi amaçlamaktadır.
+
+
+Volvo, JCB,Konecranes, Hyster, Linde, Terex, Jungheinrich, Still, Deutz, Yanmar, Donaldson, MANN+HUMMEL, Fleetguard, Trelleborg, Solideal & Michelin, BKT ve Continental gibi global markaların tedarikçisi olarak, yüksek kaliteli ürünlerimizi en kısa sürede ve en uygun fiyatlarla müşterilerimize sunuyoruz.
+
+
+Uluslararası ticaret konusunda yılların verdiği deneyim ve uzmanlık ile müşterilerimize en iyi hizmeti sunuyoruz. Dünya genelindeki tedarikçilerimiz ve müşterilerimizle yaptığımız işbirlikleri sayesinde, müşterilerimizin ihtiyaçlarına en uygun çözümleri sunuyoruz.
+
+
+Global sevkiyat konusunda da, etkin lojistik çözümlerimiz sayesinde müşterilerimize dünya genelinde hızlı ve güvenli sevkiyat hizmeti sunmaktayız. Tüm sevkiyat işlemlerimiz, müşterilerimizin ihtiyaçlarına uygun şekilde planlanır ve yönetilir.
+
+
+Müşterilerimizin beklentilerini karşılamak için yüksek kaliteli ürünlerimizi en kısa sürede ve en uygun fiyatlarla tedarik ediyor ve gerek yurt içinde gerek ise dünya genelinde hızlı ve güvenlir sevkiyatını sağlıyoruz. Bu sayede, müşterilerimizle uzun vadeli ve karşılıklı fayda sağlayan işbirlikleri kurmaktayız
+
+
+Sonuç olarak, dünya genelindeki tedarikçilerimiz ve müşterilerimizle yaptığımız işbirlikleri sayesinde, müşterilerimize en yüksek kalitede ürünlerimizi en kısa sürede ve en uygun fiyatlarla tedarik ediyoruz. Ayrıca, uluslararası ticaret konusundaki uzmanlığımız ve etkin lojistik çözümlerimiz sayesinde, müşterilerimize dünya genelinde hızlı ve güvenli sevkiyat hizmeti sunuyoruz. </p>
+
+
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-lg-offset-1">
+            <div class="about_banner">
+              <img src="{%static 'images/man.png'%}" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About end -->
+
+    <!-- Why us -->
+
+    <!-- Why us end -->
+
+    <!-- Services -->
+
+    <!-- Services end -->
+
+    <!-- Portfolio -->
+
+    <!-- Portfolio end -->
+
+    <!-- Testimonial -->
+
+    <!-- Testimonial end -->
+
+    <!-- Contact form -->
+    <section id="contact_form">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Bizimle İletişime Geçin</h2>
+
+          </div>
+          <form role="form" class="form-inline text-right col-md-6">
+            <div class="form-group">
+              <input type="text" class="form-control" id="name" placeholder="İsim" />
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email" placeholder="Email" />
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" rows="5" id="msg" placeholder="Mesaj"></textarea>
+            </div>
+            <button type="submit" class="btn submit_btn">Onayla</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Contact form end -->
+
+    <!-- Footer -->
+    {% include 'partials/_footer.html'%}
+
+    <!-- Footer end -->
+  </div>
+
+  <a id="scrollUp" href="#top" style="display: none; position: fixed; z-index: 2147483647;"></a>
+
+
+{% endblock %}

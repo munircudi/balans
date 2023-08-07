@@ -1,0 +1,51 @@
+
+{% load static %}
+<nav class="navbar bootsnav on no-full">
+        <!-- Top Search -->
+        <div class="top-search">
+          <div class="container">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-search"></i></span>
+              <input type="text" class="form-control" placeholder="Ara" />
+              <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <!-- Atribute Navigation -->
+          <div class="attr-nav">
+            <ul>
+              <li class="search">
+                <a href="#"><i class="fa fa-search"></i></a>
+              </li>
+            </ul>
+          </div>
+          <!-- Header Navigation -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"><i class="fa fa-bars"></i></button>
+            <a class="navbar-brand" href="{% url 'ana-sayfa'%}"><img class="logo" src="{%static 'images/logo.png'%}" alt="" /></a>
+          </div>
+          <!-- Navigation -->
+          <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="nav navbar-nav menu">
+              <li>
+                <a href="{%url 'ana-sayfa'%}">Ana Sayfa</a>
+              </li>
+
+              <li>
+                <a href="#about">Hakkımızda</a>
+              </li>
+              <li>
+                <a href="{%url 'markalar'%}">Markalar</a>
+              </li>
+              <li>
+                <a href="">Ürünler</a>
+              </li>
+              <li>
+                <a href="#contact_form">İletişim</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>

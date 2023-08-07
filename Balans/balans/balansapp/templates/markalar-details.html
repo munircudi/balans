@@ -1,0 +1,111 @@
+{% extends 'balansapp/base.html' %}
+{%load static%}
+
+{% block page_title %}
+  Detaylar
+{% endblock %}
+
+{% block content %}
+  <div class="wrapper">
+    <!-- Preloader -->
+
+    <div id="loading" style="display: none;">
+      <div id="loading-center">
+        <div id="loading-center-absolute">
+          <div class="object"></div>
+          <div class="object"></div>
+          <div class="object"></div>
+          <div class="object"></div>
+          <div class="object"></div>
+          <div class="object"></div>
+          <div class="object"></div>
+          <div class="object"></div>
+          <div class="object"></div>
+          <div class="object"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End off Preloader -->
+
+    <!-- Header -->
+    <header>
+      <!-- Top Navbar -->
+      {% include 'partials/_topbar.html'%}
+
+      <!-- Top Navbar end -->
+
+      <!-- Navbar -->
+      {% include 'partials/_navbar.html'%}
+
+      <!-- Navbar end -->
+    </header>
+    <!-- Header end -->
+
+
+
+
+    <!-- About -->
+
+    <!-- About end -->
+
+    <!-- Why us -->
+
+    <!-- Why us end -->
+
+    <!-- Services -->
+    <section id="services">
+      <div class="container">
+        <h2>Marka Detayları</h2>
+        <div class="row">
+          <div class="col-xl-3 col-md-12 mb-4">
+            {% include 'partials/_marka-details.html'%}
+
+
+
+        </div>
+      </div>
+    </section>
+    <!-- Services end -->
+
+    <!-- Portfolio -->
+
+    <!-- Portfolio end -->
+
+    <!-- Testimonial -->
+
+    <!-- Testimonial end -->
+
+    <!-- Contact form -->
+    <section id="contact_form">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Bizimle İletişime Geçin</h2>
+
+          </div>
+          <form role="form" class="form-inline text-right col-md-6">
+            <div class="form-group">
+              <input type="text" class="form-control" id="name" placeholder="İsim" />
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email" placeholder="Email" />
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" rows="5" id="msg" placeholder="Mesaj"></textarea>
+            </div>
+            <button type="submit" class="btn submit_btn">Onayla</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Contact form end -->
+
+    <!-- Footer -->
+    {% include 'partials/_footer.html'%}
+
+    <!-- Footer end -->
+  </div>
+
+  <a id="scrollUp" href="#top" style="display: none; position: fixed; z-index: 2147483647;"></a>
+{% endblock %}

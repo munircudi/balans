@@ -1,0 +1,40 @@
+{%load static%}
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'custom-font/fonts.css' %}" />
+        <!-- Bootstrap -->
+    <link rel="stylesheet" href="{%static 'css/bootstrap.min.css' %}" />
+        <!-- Font Awesome -->
+    <link rel="stylesheet" href="{%static 'css/font-awesome.min.css'%}" />
+        <!-- Bootsnav -->
+    <link rel="stylesheet" href="{%static 'css/bootsnav.css'%}">
+        <!-- Fancybox -->
+    <link rel="stylesheet" type="text/css" href="{%static 'css/jquery.fancybox.css'%}" media="screen" />	
+        <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="{%static 'css/custom.css'%}" />
+
+    <title>{% block page_title %}   {% endblock  %}</title>
+</head>
+<body>
+    {% block content %}{% endblock  %}
+
+    <script src="{%static 'js/jquery-1.12.1.min.js'%}"></script>
+    <script src="{%static 'js/bootstrap.min.js'%}"></script>
+
+        <!-- Bootsnav js -->
+    <script src="{%static 'js/bootsnav.js' %}"></script>
+
+        <!-- JS Implementing Plugins -->
+    <script src="{%static 'js/isotope.js' %}"></script>
+    <script src="{% static 'js/isotope-active.js' %}"></script>
+    <script src="{%static 'js/jquery.fancybox.js' %}"></script>
+
+
+    <script src="{%static 'js/main.js' %}?v=1"></script>
+
+    
+</body>
+</html>
